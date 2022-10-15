@@ -1,6 +1,21 @@
-function Menu(){
+import "../styles/Menu.scss"
+import React from "react";
+import { ReactComponent as Home } from "../images/Home.svg";
+import { ReactComponent as Inbox } from "../images/inbox.svg";
+import { ReactComponent as Explore } from "../images/explore.svg";
+import { ReactComponent as Notifications } from "../images/notifications.svg";
+import ProfileIcon from "./ProfileIcon";
+import image from "../images/profile.jpg"
+
+function Menu() {
     return(
-        <div className="menu">Menu</div>
+        <div className="menu">
+            <Home className="icon"/>
+            <Inbox className="icon"/>
+            <Explore className="icon"/>
+            <Notifications className="icon" />
+            <ProfileIcon iconSize="small" image={image}  />
+        </div>
     )
 }
 export default Menu;

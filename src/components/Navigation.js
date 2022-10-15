@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/Navigation.scss"
 import searchIcon from "./../images/searchIcon.png"
 import Menu from "./Menu"
